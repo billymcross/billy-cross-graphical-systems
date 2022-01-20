@@ -1,0 +1,10 @@
+With my shaders, I used some of the examples in the book and lessons as a jumping off point from which to experiment. I initially created a sinusoid pattern with the 
+smoothstep() function that, when left running for sufficiently long, turned into this interesting pattern of cascading lines. I intentionally scaled up the time value used in
+that step to get the desired effect, and from there zeroed in on focusing on lines as my main aesthetic. I used sinusoids and tangents to create patterns of oscillating 
+glowing lines that would move across the screen in sync, creating an aesthetically pleasing rhythm that began with simple straight lines and ended with a spiral of
+sine waves as the background cascaded downwards. Beyond the basic shapes, I wanted to focus on color in the animation as well, so I chose a blue to pink to red gradient that
+all the shapes used.
+
+My feedback from my classmates actually matched my expectations. The two people who I showed the shader to both said that the background, and specifically the way it cascaded
+at the end of the animation, reminded them of rain, with the glowing lines evoking the northern lights. This was exactly my intent with the final product; I realized the 
+background of cascaded lines looked very rain-like, and so had it change to that cascading pattern in the finale to match with the downward spiral of the sine waves.
