@@ -1,0 +1,14 @@
+This project focused heavily on noise, and so when I was picking out a type of noise to use I gravitated to fractal brownian motion, since it allowed for very visually 
+appealing noise across a 2d space. It also helped make the live video component more interesting, as increasing the multipliers for the noise turned the video into a network
+of swirling ripples. I also wanted to incorporate some visual elements from my previous work, so I added in sine waves with the same color scheme I used previously, combined
+with fractal brownian motion to add more ripples to the waves. When I was adding interaction methods, I wanted to focus on using the mouse. I made the mouse position
+modify the amplitude and frequency of the sine wave (which is also further modified by the arrow keys) and move a pair of horizontal lines up and down. Additionally, the N
+key cycles the noise level in the background. The sine wave bordered by the two horizontal lines created a pleasing unified shape, and I found that the noisy background 
+acted as an excellent backdrop, allowing me to turn the normally mundane camera video into a detailed background for the piece. All together, this allowed me to combine my 
+previous design elements, like the color scheme and the distorted sine waves, with the live video in the current project.
+
+The feedback I received from a classmate was encouraging and, to an extent, lined up with what I was intending with the piece. They mentioned the movement of the background 
+having a notable rhythm that made them want to dance, as well as wanting to pluck the sine wave like a string using the mouse controls. These were helpful comments because
+fundamentally all of my work so far has related to rhythm in some way, so the fact that that comes across is encouraging. Futhermore, they noticed that the visuals were 
+similar to my previous work; again, I'm glad they picked up on that since I definitely wanted to bring some of my existing stylistic elements over to this project to give
+it a theme consistent with what I've already done.
