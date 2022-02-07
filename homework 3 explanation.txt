@@ -1,0 +1,18 @@
+I had the idea for this piece in my head as soon as we properly introduced reaction diffusion, realizing that reaction diffusion 
+could be used to make the cells coalesce into some kind of eerie "eye" shape, and I'm glad I could actually make it 
+a reality. This piece is my foray into making abstract, avant-garde weirdness, and as such is very intentionally designed to be 
+off-putting and difficult to look at. This is probably odd coming from me, considering how much I disliked the eye-hurting work of
+Ryoji Ikeda, but in doing this project I've realized the value in that kind of work--the sort that gets in your face and 
+confounds you. At the same time, it's not JUST random noise -- as mentioned above, I had a distinct idea for the shape of this piece,
+where the reaction resolves into a jumble of static surrounding a single central "eye" staring eerily at the viewer. This was 
+achieved through the "orientation" option of reaction diffusion, as the diffusion rate of B is scaled based on the distance from the
+center of the screen, creating a circular shape that morphs into increasingly aggressive static moving outwards. Additionally, I 
+scaled the diffusion rate based on time elapsed, meaning that the static becomes noisier and, in my experience, both more unpleasant
+and more *fascinating* at the same time. The interaction keys that manipulate the values of the reaction diffusion allow for more 
+styles on this initial concept; for example, increasing the diffusion rates can amplify the aggressive static, or increasing the 
+kill rate will result in locations that have no A or B chemical in them, leading to empty black spaces between the oscillating white,
+with the only red being a glow in the central eye.
+
+Side note: the name "eye_of_HORUS" is derived from the organization/cult/paracausal entity "Horus" from the tabletop roleplaying 
+game Lancer. In Lancer, Horus manifests strange, unexplained technology throughout the universe, and its off-putting, occult stylings
+greatly resonate with me because, to be blunt, I really like *weird artsy stuff*.
