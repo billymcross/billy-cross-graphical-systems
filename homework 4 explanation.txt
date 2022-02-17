@@ -1,0 +1,26 @@
+Each of my presets was meant to explore some different shape in the physarum sim.
+
+<<<<====DISINTEGRATE====>>>>
+This preset is meant to make the simulation, well, disintegrate. It lowers the scan distance so that the agents will simply fly 
+everywhere as a sort of cloud of dust. The main purpose of this preset is to effectively "reset" the simulation, as it obliterates
+any existing patterns. From this preset, one can adjust parameters to settle the sim into new patterns.
+
+<<<<====VINES====>>>>
+This was a pattern I found in my early versions of violet lightning, which creates a pleasing network of sweeping curves. The high 
+scan distance used in this pattern causes the agents to cluster together into contiguous lines, or "vines", rather than spreading
+out. These vines tend to create curving, sweeping swirls that look very plant-like. Eventually, the vines tend to converge on more 
+straight lines, but we can get the pattern back by cranking the scan distance to minimum, causing the agents to disperse. Then,
+increasing the scan distance to maximum again will restore the pattern from the dispersed agents.
+
+<<<<====OVERWHELM====>>>>
+This pattern takes advantage of using >1 decay levels. This makes it so that the colors, rather than decaying and fading, get more 
+intense over time. The combination of this and the the scan distance creates the same sort of vine shape as above, but said vines
+get brighter and more intense, meaning that the screen starts to fill up with these organic pink shapes. The most intensity
+will be of course at the intersections between vines, creating spots of bright intensity. In my interpretation, this looked almost
+like an infection spreading and, fittingly, *overwhelming* the screen.
+
+<<<<====HAZE====>>>>
+This preset increases the turn angle divisor, and was one of the patterns I observed in my first experiments with physarum. With 
+the turn angle divisor high, thus creating a small turn angle, the agents tend to cluster into a sort of gridlike pattern. With the 
+high number of agents in the simulation, these grid patterns tend to make clouds that move across the screen like wisps of smoke,
+hence the name "haze".
