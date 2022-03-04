@@ -3,3 +3,4 @@ Assignment 2: website--https://billymcross.github.io/billy-cross-webgl-intro/, c
 Feedback Experiment: website--https://billymcross.github.io/billy-cross-feedback-experiment/
 Assignment 3: website--https://billymcross.github.io/eye_of_HORUS/, code--https://github.com/billymcross/eye_of_HORUS, explanation--billy-cross-graphical-systems/homework 3 explanation.txt
 Assignment 4: website--https://billymcross.github.io/violet_lightning/, code--https://github.com/billymcross/violet_lightning, explanation--
+Final Project: website--, video--https://www.youtube.com/watch?v=eQO9vqwoVbc, code--https://github.com/billymcross/breakboids, explanation--billy-cross-graphical-systems/final project explanation.txt

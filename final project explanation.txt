@@ -1,0 +1,33 @@
+To be perfectly blunt, a lot of this project was spent angrily wrangling WebGl into doing what I wanted. My first big hurdle
+was just making the boids move properly at all. Initially, the boids starter code that we discussed in class had some odd issues
+where the boids would only consider the center of the screen instead of other boids. After hours of tweaking the shader math 
+I went to the professor for help, and he found that having blending on completely broke the whole simulation. I have, frankly, no
+idea WHY that would happen, but whatever the case disabling blending let me move forward with implementing the sim (later on, I
+would occasionally turn on blending just to see what it did, and every time it broke my simulation in some new, inexplicable way). 
+	My next major block was getting the math of the boid movement to work. I had already experimented with boids in a separate 
+P5.js project, but attempting to just directly port the math from it didn't quite work. With a good deal of trial and error, I was able
+to adapt the calculations for determining the force applied to each boid into my vertex shader -- among other things, the main tweak
+involved adapting the math to work in a coordinate system that only ranged from -1 to 1.
+	Once I had that issue resolved, I finally had working, moving boids! However, my implementation at the time often made the boids 
+clump up and overlap with each other after a while, so it would appear that there were less boids since so many of them just stuck 
+to the same space. Additionally, this behavior meant that the boids also had a tendency to align with each other too actively. While
+this was good flocking behavior, it didn't look particularly interesting for the purposes of my project. To improve the visuals, I
+removed a couple of instances where the force on each boid was getting averaged. This meant that my boids had a tendency to spin 
+around each other more, but overall allowed them to move much more freely, with the ability to clump up and diffuse all across the
+screen rather than just getting stuck to each other. I also added tweakpane values for adjusting the thresholds at which the boids
+would see each other and scales for each force, allowing me to influence them into a variety of shapes, ranging from a swirling vortex
+to individual circular clumps separated across the screen.
+	Another consideration was the actual color of my boids. I didn't just want them to be a static color, so I passed in their position 
+and velocity to the render fragment shader, which allowed me to color them based on their current heading. After trying out a more purple
+color scheme based on using their horizontal velocity for the red channel and vertical velocity for the blue, I opted instead to use
+the horizontal velocity for both channels. This meant that my boids were had a more unified red color scheme, with splashes of blue in
+their swirling midst that broke up the monochrome.
+	The final consideration was the musical visualization portion. I was able to use the webware notes provided by the professor, as
+well as some liberal googling, to figure out how to make an audio player and get the sound level from it, which I then provided as a uniform to 
+the simulation shader. I used this uniform to scale the cohesion, separation, and alignment forces affecting the boids, causing their behavior 
+to change with the music. I experimented with getting different values from the music, and eventually settled on using the waveform data, since
+this had the most obvious effects on the boids' behavior. With some tweakpane values to adjust how much each value was being affected by the
+audio, I was able to play music and have the boids effectively "dance" to it. Obviously, the music effects are not always perfectly obvious,
+especially if the boids are swarming in a large flock, but with the right settings I was able to see them clumping up and pulsing and moving
+in time with the sound, and with the other settings available it's possible to make my boids into a music visualizer with a variety
+of shapes, ranging from a grid of pulsing clumps to a circle in the center that vibrates and ungulates with the sound.
