@@ -19,9 +19,9 @@ would see each other and scales for each force, allowing me to influence them in
 to individual circular clumps separated across the screen.
 	Another consideration was the actual color of my boids. I didn't just want them to be a static color, so I passed in their position 
 and velocity to the render fragment shader, which allowed me to color them based on their current heading. After trying out a more purple
-color scheme based on using their horizontal velocity for the red channel and vertical velocity for the blue, I opted instead to use
-the horizontal velocity for both channels. This meant that my boids were had a more unified red color scheme, with splashes of blue in
-their swirling midst that broke up the monochrome.
+color scheme based on using their horizontal velocity for the red channel and vertical velocity for the blue, I scaled the colors to make the
+red channel more pronounced. This meant that my boids were had a more unified red color scheme, with splashes of blue in their swirling midst 
+that broke up the monochrome.
 	The final consideration was the musical visualization portion. I was able to use the webware notes provided by the professor, as
 well as some liberal googling, to figure out how to make an audio player and get the sound level from it, which I then provided as a uniform to 
 the simulation shader. I used this uniform to scale the cohesion, separation, and alignment forces affecting the boids, causing their behavior 
